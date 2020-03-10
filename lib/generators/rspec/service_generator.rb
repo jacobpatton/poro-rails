@@ -4,7 +4,7 @@ module Rspec
       source_root File.expand_path("templates", __dir__)
 
       def create_test_file
-        template 'service_spec.rb.tt', File.join('spec/services', class_path, "#{file_name}_service_spec.rb")
+        template 'service_spec.rb.tt', File.join('spec/services', class_path, "#{file_name}_spec.rb")
       end
 
       private

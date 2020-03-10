@@ -5,7 +5,7 @@ module Rails
       check_class_collision suffix: "Service"
 
       def create_service
-        template "service.rb.tt", File.join("app/services", class_path, "#{file_name}_service.rb")
+        template "service.rb.tt", File.join("app/services", class_path, "#{file_name}.rb")
       end
 
       hook_for :test_framework
